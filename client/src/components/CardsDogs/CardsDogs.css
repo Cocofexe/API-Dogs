@@ -1,0 +1,94 @@
+.cardsDogsFlexbox{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.cardsDogsFilterGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.cardsDogsFilterFilters{
+    grid-column: 2;
+    grid-row: 2;
+    cursor: pointer;
+}
+
+.cardsDogsFilterTemps{
+    grid-column: 4;
+    grid-row: 2;
+    cursor: pointer;
+}
+
+.cardsDogsFilterMyDogs{
+    grid-column: 6;
+    grid-row: 2;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.cardsDogsFilterMyDogs:hover{
+    color: black;
+    background-color: gray;
+}
+
+.cardsDogsFilterAllDogs{
+    grid-column: 8;
+    grid-row: 2;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.cardsDogsFilterAllDogs:hover{
+    color: black;
+    background-color: gray;
+}
+
+
+.cardsDogsPaginationGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.cardsDogsButtonPrev{
+    grid-column: 2;
+    grid-row: 2;
+    border-radius: 20px 8px;
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+    border:none;
+}
+
+.cardsDogsButtonPrev:hover{
+    color: black;
+    background-color: gray;
+}
+
+.cardsDogsButtonNext{
+    grid-column: 4;
+    grid-row: 2;
+    border-radius: 8px 20px;
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+    border: none;
+}
+
+.cardsDogsButtonNext:hover{
+    color: black;
+    background-color: gray;
+}
