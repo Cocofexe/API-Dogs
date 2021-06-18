@@ -7,7 +7,7 @@ export const GET_DETAILS = 'GET_DETAILS'
 export function getDogs(name){
     return async (dispatch) =>{
     try{
-        const res = await axios.get(`http://localhost:3001/dogs?name=`+name)
+        const res = await axios.get(`http://54.232.68.2:3001/dogs?name=`+name)
         dispatch( {
             type: GET_DOGS,
             payload: res.data
@@ -25,7 +25,7 @@ export function getDogs(name){
 export function getTemps(){
     return async (dispatch) =>{
     try{
-        const res = await axios.get('http://localhost:3001/temperaments')
+        const res = await axios.get('http://54.232.68.2:3001/temperaments')
         dispatch( {
             type: GET_TEMPS,
             payload: res.data
@@ -43,7 +43,7 @@ export function getTemps(){
 export function getDetails(id){
     return async (dispatch) =>{
     try{
-        const res = await axios.get(`http://localhost:3001/dogs/${id}`)
+        const res = await axios.get(`http://54.232.68.2:3001/dogs/${id}`)
         dispatch( {
             type: GET_DETAILS,
             payload: res.data
